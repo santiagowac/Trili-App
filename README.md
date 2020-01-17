@@ -1,2 +1,5 @@
 # Trili-App
-# Este es un proyecto enfocado en el desarrollo de una plataforma de compraración de precios de x cantidad de productos, el desarrollo de trili se llevo a cabo con el patron de diseño mvc, añadiendo una capa mas para la logica de negocio (Business Layer
+El proyecto Trili App esta enfocado en una plataforma de comparación de precios  x cantidad de productos con el fin de que el usuario final consiga los mejores productos a  los mejores precios, Trili App esta desarrollada bajo el patros de diseño mvc con una capa de mas para administrar toda la logica de negocios BL (Business Layer).
+# Uso
+Para el uso de trili es recomendable el IDE java netbeans 8.2 
+Para correr Trili App es necesario ubicarse en la carpeta TriliAppForms - Formularios.

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.text.*?>
+
+<!--Paquete Para Los textos-->
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.com.triliapp.forms.FXMLRangoController">
+   <children>
+      <ImageView fitHeight="832.0" fitWidth="618.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@recursos/fondo.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="109.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="315.0" style="-fx-font-family: Impact; -fx-font-weight: bolder; -fx-font-size: 3.0em;" text="GESTIÓN DE RANGOS" textFill="#f9fafc">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button onAction="#ActualizarRango" layoutX="335.0" layoutY="142.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact; -fx-font-size: 2.0em;" text="Actualizar" textFill="#f9fafc" />
+      <Button onAction="#EliminarRol" layoutX="231.0" layoutY="142.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact; -fx-font-size: 2.0em;" text="Eliminar" textFill="#f9fafc" />
+      <Button layoutX="130.0" layoutY="142.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact; -fx-font-size: 2.0em;" text="Buscar" textFill="#f9fafc" />
+      <Button onAction="#IngresarRango" layoutX="26.0" layoutY="142.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact; -fx-font-size: 2.0em;" text="Insertar" textFill="#f9fafc" />
+      <Button onAction="#RegresarRang" layoutX="190.0" layoutY="749.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact; -fx-font-size: 2.0em;" text="Regresar"  textFill="#f9fafc" />
+      <HBox alignment="CENTER" layoutX="16.0" layoutY="198.0" prefHeight="45.0" prefWidth="431.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Id Rango: " textFill="#f9fafc" />
+            <TextField fx:id="txtIdRango" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="16.0" layoutY="251.0" prefHeight="45.0" prefWidth="431.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Nombre Rango: " textFill="#f9fafc" />
+            <TextField fx:id="txtNombreRango" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="16.0" layoutY="310.0" prefHeight="45.0" prefWidth="431.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Imagen Rango: " textFill="#f9fafc" />
+            <TextField fx:id="txtImagenRango" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="16.0" layoutY="371.0" prefHeight="45.0" prefWidth="431.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Descripción Rango: " textFill="#f9fafc" />
+            <TextField fx:id="txtDescripcionRango" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <TableView layoutX="16.0" layoutY="424.0" prefHeight="200.0" prefWidth="431.0" style="-fx-font-family: Impact;">
+        <columns>
+          <TableColumn prefWidth="70.0" text="Id" />
+          <TableColumn prefWidth="115.0" text="Nombre" />
+            <TableColumn prefWidth="104.0" text="Imagen" />
+            <TableColumn prefWidth="141.0" text="Descripcion " />
+        </columns>
+      </TableView>
+      <Label layoutX="16.0" layoutY="646.0" prefHeight="45.0" prefWidth="431.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 2px 0px 2px; -fx-font-family: Impact;" textFill="#f9fafc" />
+   </children>
+</AnchorPane>

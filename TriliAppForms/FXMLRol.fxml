@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="triliappforms.FXMLRolController" alignment="center" vgap="10" hgap="10">
+    
+    <!-- <URL value="@fxmlSugerencia.css"/>--><!---->
+
+    <Text text="Rol" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" fx:id="textoRol">
+        <font>
+             <Font name="Franklin Gothic Medium" size="15"/>
+            </font>
+        </Text>
+        
+        <!--Labels y cajas de texto==========================================-->
+        
+        <Label text="NombreRol" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <font>
+                  <Font name="Franklin Gothic Medium" size="15"/>
+            </font>        
+        </Label>   
+        <TextField fx:id="txtNombreRol" GridPane.columnIndex="2" GridPane.rowIndex="3">
+        </TextField> 
+            
+        <Label text="IdRol" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15"/>
+            </font>
+        </Label>
+        <TextField fx:id="txtIdRol" GridPane.columnIndex="2" GridPane.rowIndex="4">
+        </TextField>
+        
+        <!--Botones=========================================================-->     
+         <HBox spacing="5" alignment= "bottom_center"
+         GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button text="Insertar" fx:id="buttonInsertarRol"
+            onAction="#handleSubmitButtonActionRI">
+                <font>
+                    <Font name="Franklin Gothic Medium" size="14" />
+                </font> 
+            </Button>
+         </HBox>
+         
+         <HBox spacing="5" alignment="bottom_center"
+         GridPane.columnIndex="3" GridPane.rowIndex="4">
+             <Button text="Mostrar" fx:id="buttomMostrarRol"
+             onAction="#handleMostrartButtonActionRM">
+                 <font>
+                     <Font name="Franklin Gothic Medium" size="14" />
+                 </font>
+             </Button>
+         </HBox>
+         
+         <HBox spacing="5" alignment="bottom_center"
+         GridPane.columnIndex="3" GridPane.rowIndex="5">
+         <Button text="Actualizar" fx:id="buttomActualizarRol"
+         onAction="#handleActualizarButtonActionRA">
+           <font>
+                    <Font name="Franklin Gothic Medium" size="14" />
+                </font>
+            </Button>
+         </HBox>
+        
+        <HBox spacing="5" alignment="bottom_center"
+         GridPane.columnIndex="3" GridPane.rowIndex="6">
+         <Button text="Eliminar" fx:id="buttomEliminarRol"
+         onAction="#handleEliminarButtonActionRE">
+           <font>
+                    <Font name="Franklin Gothic Medium" size="14" />
+                </font>
+            </Button>
+         </HBox>
+        
+          
+         <Text fx:id="actiontarget" 
+      GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                
+        <stylesheets>
+        <URL value="@fxmFormularios.css"/>
+    </stylesheets>
+
+</GridPane>

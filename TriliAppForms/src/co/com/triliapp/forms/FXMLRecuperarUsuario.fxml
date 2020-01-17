@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="466.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="co.com.triliapp.forms.FXMLRecuperarUsuarioController">
+   <children>
+      <ImageView fitHeight="832.0" fitWidth="618.0" pickOnBounds="true" preserveRatio="true" style="-fx-font-family: Impact; -fx-background-color: black;">
+         <image>
+            <Image url="@recursos/fondo.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="109.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="353.0" style="-fx-font-family: Impact; -fx-font-weight: bolder; -fx-font-size: 3.0em;" text="RECUPERAR USUARIO" textFill="#f9fafc">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="25.0" layoutY="470.0" prefHeight="45.0" prefWidth="418.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Correo: " textFill="#f9fafc" />
+            <TextField fx:id="textFielCorreoUsu" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="26.0" layoutY="556.0" prefHeight="45.0" prefWidth="418.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Contraseña: " textFill="#f9fafc" />
+            <TextField fx:id="textFielContraseniaUsu" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="247.0" fitWidth="155.0" layoutX="160.0" layoutY="150.0" opacity="0.67" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@recursos/img1.jpg" />
+         </image>
+      </ImageView>
+      <Button onAction="" layoutX="317.0" layoutY="607.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-font-size: 2.0em; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact;" text="Enviar" textFill="#f9fafc" />
+      <Button layoutX="87.0" layoutY="607.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-font-size: 2.0em; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact;" text="Regresar" onAction="#RegresarLogRU" textFill="#f9fafc" />
+   </children>
+</AnchorPane>

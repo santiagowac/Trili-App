@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="466.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="co.com.triliapp.forms.FXMLVerPublicacionesParaUsuController">
+   <children>
+      <ImageView fitHeight="832.0" fitWidth="618.0" pickOnBounds="true" preserveRatio="true" style="-fx-font-family: Impact; -fx-background-color: black; -fx-font-size: 2.0em; -fx-border-width: 0px 0px 2px 0px;">
+         <image>
+            <Image url="@recursos/fondo.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="322.0" layoutY="725.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-font-size: 2.0em; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="Reportar" onAction="#irAReportarU" textFill="#f9fafc" />
+      <Button layoutX="67.0" layoutY="725.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-font-size: 2.0em; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="Calificar" onAction="#irACalificarU" textFill="#f9fafc" />
+      <Button layoutX="191.0" layoutY="783.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-font-size: 2.0em; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="Regresar" onAction="#RegresarVPU" textFill="#f9fafc" />
+      <HBox layoutX="29.0" layoutY="656.0" prefHeight="45.0" prefWidth="431.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Usuario : " textFill="#f9fafc" />
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="UsuP" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox layoutX="29.0" layoutY="543.0" prefHeight="45.0" prefWidth="431.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Precio: " textFill="#f9fafc" />
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="PrecP" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox layoutX="29.0" layoutY="484.0" prefHeight="45.0" prefWidth="431.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Marca: " textFill="#f9fafc" />
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="MarcP" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox layoutX="29.0" layoutY="428.0" prefHeight="45.0" prefWidth="431.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Descripcion: " textFill="#f9fafc" />
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="DescP" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox layoutX="29.0" layoutY="599.0" prefHeight="45.0" prefWidth="431.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Ubicacion: " textFill="#f9fafc" />
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="UbiP" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <Label layoutX="10.0" layoutY="10.0" style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="FechaP" textFill="#f9fafc" />
+      <Label layoutX="10.0" layoutY="10.0" style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Fecha Publicacion: " textFill="#f9fafc" />
+      <HBox layoutX="29.0" layoutY="371.0" prefHeight="45.0" prefWidth="431.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Fecha Publicacion: " textFill="#f9fafc" />
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="FechaP" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="193.0" fitWidth="230.0" layoutX="130.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@recursos/productoprueba1.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="109.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="45.0" prefWidth="409.0" style="-fx-font-family: Impact; -fx-font-weight: bolder; -fx-font-size: 3.0em;" text="NOMBRE DE LA PUBLICACION" textFill="#f9fafc">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="466.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="co.com.triliapp.forms.FXMLUsuarioAdminController">
+   <children>
+      <ImageView fitHeight="832.0" fitWidth="618.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: white; -fx-background-color: black; -fx-border-width: 2px 2px 2px 2px;">
+         <image>
+            <Image url="@recursos/fondo.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="109.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="41.0" prefWidth="351.0" style="-fx-font-family: Impact; -fx-font-weight: bolder; -fx-font-size: 3.0em;" text="GESTION DE USUARIOS" textFill="#f9fafc">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="175.0" prefHeight="39.0" prefWidth="213.0" style="-fx-border-color: white; -fx-background-color: black; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="28.0" prefWidth="149.0" style="-fx-font-family: impact; -fx-font-size: 1.9em;" text="Id Usuario:" textFill="#f9fafc" />
+            <TextField fx:id="txtIdUsuario"/>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="226.0" prefHeight="39.0" prefWidth="438.0" style="-fx-border-color: white; -fx-background-color: black; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: impact; -fx-font-size: 1.9em;" text="Nombre(Alias): " textFill="#f9fafc" />
+            <TextField fx:id="txtDisplayName" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="241.0" layoutY="175.0" prefHeight="39.0" prefWidth="213.0" style="-fx-border-color: white; -fx-background-color: black; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="28.0" prefWidth="108.0" style="-fx-font-family: impact; -fx-font-size: 1.9em;" text="Imagen: " textFill="#f9fafc" />
+            <TextField fx:id="txtImagenUsuario" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="241.0" layoutY="278.0" prefHeight="39.0" prefWidth="213.0" style="-fx-border-color: white; -fx-background-color: black; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="28.0" prefWidth="92.0" style="-fx-font-family: impact; -fx-font-size: 1.9em;" text="Correo:" textFill="#f9fafc" />
+            <TextField fx:id="txtCorreoUsuario" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="241.0" layoutY="333.0" prefHeight="39.0" prefWidth="213.0" style="-fx-border-color: white; -fx-background-color: black; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="28.0" prefWidth="82.0" style="-fx-font-family: impact; -fx-font-size: 1.9em;" text="Rango: " textFill="#f9fafc" />
+            <ComboBox fx:id="cbbfkRangoUsuario"/>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="241.0" layoutY="384.0" prefHeight="39.0" prefWidth="213.0" style="-fx-border-color: white; -fx-background-color: black; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="28.0" prefWidth="91.0" style="-fx-font-family: impact; -fx-font-size: 1.9em;" text="Estado: " textFill="#f9fafc" />
+            <TextField fx:id="txtEstadoUsuario" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="278.0" prefHeight="39.0" prefWidth="213.0" style="-fx-border-color: white; -fx-background-color: black; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="28.0" prefWidth="179.0" style="-fx-font-family: impact; -fx-font-size: 1.9em;" text="Contraseña: " textFill="#f9fafc" />
+            <TextField fx:id="txtContraseniaUsuario" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="333.0" prefHeight="39.0" prefWidth="213.0" style="-fx-border-color: white; -fx-background-color: black; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="28.0" prefWidth="184.0" style="-fx-font-family: impact; -fx-font-size: 1.9em;" text="Experiencia: " textFill="#f9fafc" />
+            <TextField fx:id="txtExperienciaUsuario" text="0"/>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="384.0" prefHeight="39.0" prefWidth="213.0" style="-fx-border-color: white; -fx-background-color: black; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: impact; -fx-font-size: 1.9em;" text="Rol: " textFill="#f9fafc" />
+            <ComboBox fx:id="cbbFkRolUsuario" />
+         </children>
+      </HBox>
+            <Button layoutX="16.0" layoutY="126.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-font-size: 2.0em; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact;" text="Insertar" textFill="#f9fafc" onAction="#IngresarUsuario" />
+      <Button layoutX="121.0" layoutY="126.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-font-size: 2.0em; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact;" text="Buscar" textFill="#f9fafc" />
+      <Button layoutX="225.0" layoutY="126.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-font-size: 2.0em; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact;" text="Eliminar" textFill="#f9fafc" onAction="#EliminarUsuarioPorNombre" />
+      <Button layoutX="337.0" layoutY="126.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-font-size: 2.0em; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact;" text="Actualizar" textFill="#f9fafc" onAction="#ActualizarUsuario"/>
+      <Button layoutX="180.0" layoutY="779.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-font-size: 2.0em; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact;" text="Regresar" textFill="#f9fafc" onAction="#RegresarUsu" />
+      <Label layoutX="14.0" layoutY="727.0" prefHeight="45.0" prefWidth="438.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 2px 0px 2px; -fx-font-family: Impact;" textFill="#f9fafc" />
+      <TableView layoutX="4.0" layoutY="429.0" prefHeight="290.0" prefWidth="462.0" style="-fx-font-family: Impact;">
+        <columns>
+          <TableColumn prefWidth="30.0" text="Id" />
+          <TableColumn prefWidth="59.0" text="Imagen" />
+            <TableColumn prefWidth="64.0" text="Alias" />
+            <TableColumn prefWidth="75.0" text="Contraseña" />
+            <TableColumn prefWidth="48.0" text="Correo" />
+            <TableColumn text="Experiencia" />
+            <TableColumn prefWidth="51.0" text="Rango" />
+            <TableColumn prefWidth="52.0" text="Rol" />
+            <TableColumn prefWidth="216.0" text="Column X" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

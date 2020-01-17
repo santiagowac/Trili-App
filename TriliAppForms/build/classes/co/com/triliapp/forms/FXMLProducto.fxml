@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+
+<!--Paquete Para Colocar Textos-->
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.com.triliapp.forms.FXMLProductoController">
+   <children>
+      <ImageView fitHeight="832.0" fitWidth="618.0" pickOnBounds="true" preserveRatio="true" style="-fx-font-family: Impact; -fx-background-color: black;">
+         <image>
+            <Image url="@recursos/fondo.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="-1.0" prefHeight="109.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="353.0" style="-fx-font-family: Impact; -fx-font-weight: bolder; -fx-font-size: 3.0em;" text="GESTIÓN DE PRODUCTOS" textFill="#f9fafc">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button layoutX="14.0" layoutY="137.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Insertar" textFill="#f9fafc" />
+      <Button layoutX="334.0" layoutY="137.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Actualizar" textFill="#f9fafc" />
+      <Button layoutX="222.0" layoutY="137.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Eliminar" textFill="#f9fafc" />
+      <Button layoutX="121.0" layoutY="137.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Buscar" textFill="#f9fafc" />
+      <TableView layoutX="18.0" layoutY="416.0" prefHeight="313.0" prefWidth="432.0" style="-fx-font-family: Impact;">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Id" />
+          <TableColumn prefWidth="144.0" text="Nombre" />
+            <TableColumn prefWidth="84.0" text="Usuario" />
+            <TableColumn prefWidth="126.0" text="Categoria" />
+        </columns>
+      </TableView>
+      <Button layoutX="181.0" layoutY="774.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Regresar" onAction="#RegresarProd" textFill="#f9fafc" />
+      <HBox alignment="CENTER" layoutX="17.0" layoutY="188.0" prefHeight="45.0" prefWidth="432.0" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-size: 2.2em;" text="Id Producto: " textFill="#f9fafc" />
+            <TextField style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="18.0" layoutY="248.0" prefHeight="45.0" prefWidth="432.0" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-size: 2.2em;" text="Nombre Producto: " textFill="#f9fafc" />
+            <TextField style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="18.0" layoutY="302.0" prefHeight="45.0" prefWidth="432.0" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-size: 2.2em;" text="Id Usuario: " textFill="#f9fafc" />
+            <TextField style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="17.0" layoutY="362.0" prefHeight="45.0" prefWidth="432.0" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-size: 2.2em;" text="Id Categoria" textFill="#f9fafc" />
+            <TextField style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <Label layoutX="15.0" layoutY="741.0" prefHeight="33.0" prefWidth="438.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 2px 0px 2px; -fx-font-family: Impact;" textFill="#f9fafc" />
+   </children>
+</AnchorPane>

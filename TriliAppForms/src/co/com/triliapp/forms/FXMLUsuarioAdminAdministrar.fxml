@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.com.triliapp.forms.FXMLUsuarioAdminAdministrarController">
+   <children>
+      <ImageView fitHeight="832.0" fitWidth="618.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@recursos/fondo.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="109.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="45.0" prefWidth="391.0" style="-fx-font-family: Impact; -fx-font-weight: bolder; -fx-font-size: 3.0em;" text="ADMINISTRAR-GESTIONAR" textFill="#f9fafc">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="17.0" layoutY="166.0" prefHeight="45.0" prefWidth="433.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#GestionarCategorias" style="-fx-background-color: black; -fx-border-color: white; -fx-font-size: 2.5em; -fx-font-family: Impact; -fx-border-width: 0px 2px 0px 2px;" text="CATEGORIAS" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="17.0" layoutY="224.0" prefHeight="45.0" prefWidth="433.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#GestionarProductos" style="-fx-background-color: black; -fx-border-color: white; -fx-font-size: 2.5em; -fx-font-family: Impact; -fx-border-width: 0px 2px 0px 2px;" text="PRODUCTOS" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="18.0" layoutY="289.0" prefHeight="45.0" prefWidth="433.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#GestionarPublicaciones" style="-fx-background-color: black; -fx-border-color: white; -fx-font-size: 2.5em; -fx-font-family: Impact; -fx-border-width: 0px 2px 0px 2px;" text="PUBLICACIONES" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="17.0" layoutY="355.0" prefHeight="45.0" prefWidth="433.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#GestionarRangos" style="-fx-background-color: black; -fx-border-color: white; -fx-font-size: 2.5em; -fx-font-family: Impact; -fx-border-width: 0px 2px 0px 2px;" text="RANGOS" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="17.0" layoutY="604.0" prefHeight="45.0" prefWidth="433.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#GestionarCalificaciones" style="-fx-background-color: black; -fx-border-color: white; -fx-font-size: 2.5em; -fx-font-family: Impact; -fx-border-width: 0px 2px 0px 2px;" text="CALIFICACIONES" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="17.0" layoutY="540.0" prefHeight="45.0" prefWidth="433.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#GestionarSugerencias" style="-fx-background-color: black; -fx-border-color: white; -fx-font-size: 2.5em; -fx-font-family: Impact; -fx-border-width: 0px 2px 0px 2px;" text="SUGERENCIAS" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="17.0" layoutY="478.0" prefHeight="45.0" prefWidth="433.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#GestionarRoles" style="-fx-background-color: black; -fx-border-color: white; -fx-font-size: 2.5em; -fx-font-family: Impact; -fx-border-width: 0px 2px 0px 2px;" text="ROLES" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="17.0" layoutY="416.0" prefHeight="45.0" prefWidth="433.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#GestionarReportes" style="-fx-background-color: black; -fx-border-color: white; -fx-font-size: 2.5em; -fx-font-family: Impact; -fx-border-width: 0px 2px 0px 2px;" text="REPORTES" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <Button layoutX="177.0" layoutY="755.0" mnemonicParsing="false" onAction="#regresarAdm" style="-fx-background-color: black; -fx-border-color: white; -fx-font-size: 2.0em; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact;" text="REGRESAR" textFill="#f9fafc" />
+      <HBox alignment="CENTER" layoutX="17.0" layoutY="671.0" prefHeight="45.0" prefWidth="433.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#GestionarUsuarios" style="-fx-background-color: black; -fx-border-color: white; -fx-font-size: 2.5em; -fx-font-family: Impact; -fx-border-width: 0px 2px 0px 2px;" text="USUARIOS" textFill="#f9fafc" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

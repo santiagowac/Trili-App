@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+<GridPane  styleClass="@fxmlcategoria.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="triliappforms.FXMLCategoriaController" alignment="center" hgap="10" vgap="10">
+    <!-- <children>-->
+    <!-- <URL value="@fxmlcategoria.css"/>--> <!--Css-->
+
+    <Text text="Categoria" fx:id="textcategoria"
+          GridPane.columnIndex="0" GridPane.rowIndex="0"
+          GridPane.columnSpan="2"/>
+        
+    <!--Label y cajas de texto===========================================-->
+        
+    <Label text="IdCategoria" GridPane.columnIndex="0" GridPane.rowIndex="3">
+    </Label>
+    <TextField fx:id="txtIdCategoria" GridPane.columnIndex="1" GridPane.rowIndex="3">
+    </TextField>   
+        
+    <Label text="Nombre Categoria" GridPane.columnIndex="0" GridPane.rowIndex="4" >
+    </Label>
+    <TextField fx:id="txtNombreCategoria" GridPane.columnIndex="1" GridPane.rowIndex="4">
+    </TextField>              
+        
+    <!--=======Botones===================================================-->
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="3">
+        <Button text="Insertar" fx:id="buttonInsertarUsuario" onAction="#AgregarCategoria" >
+            <!-- <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font> -->
+        </Button>
+    </HBox>
+        
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="4">
+        <Button text="Mostrar" fx:id="buttonMostrarUsuario" onAction="#MostrarCategoria"  >
+            <!-- <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font> -->
+        </Button>
+    </HBox>
+        
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="5">
+        <Button text="Actualizar" fx:id="buttonActualizarUsuario" onAction="#ActualizacionCategoria"  >
+            <!-- <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font> -->
+        </Button>
+    </HBox>
+        
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="6">
+        <Button text="Eliminar" fx:id="buttonEliminarUsuario" onAction="#EliminarCategoria" >
+            <!-- <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font> -->
+        </Button>
+    </HBox>
+    <!--Acciones-->
+    
+    <HBox GridPane.columnIndex="1" GridPane.rowIndex="5" alignment="center">
+        <Text fx:id="actiontarget" >
+        </Text>
+    </HBox>
+        
+    <stylesheets>
+        <URL value="@fxmFormularios.css"/>
+    </stylesheets>
+
+    <!-- </children>-->
+</GridPane>

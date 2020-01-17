@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="466.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="co.com.triliapp.forms.FXMLPublicacionDeProductoParaAdminController">
+   <children>
+      <ImageView fitHeight="832.0" fitWidth="618.0" pickOnBounds="true" preserveRatio="true" style="-fx-font-family: Impact; -fx-background-color: black;">
+         <image>
+            <Image url="@recursos/fondo.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="288.0" layoutY="727.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Enviar" textFill="#f9fafc" />
+      <Button layoutX="91.0" layoutY="727.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Regresar"  onAction="#irAMenuAdm" textFill="#f9fafc" />
+      <TextField layoutX="24.0" layoutY="285.0" prefHeight="94.0" prefWidth="423.0" style="-fx-font-family: Impact;" />
+      <HBox alignment="CENTER" layoutX="23.0" layoutY="582.0" prefHeight="45.0" prefWidth="423.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="29.0" prefWidth="245.0" style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="Ubicación del Producto: " textFill="#f9fafc" />
+            <TextField style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="24.0" layoutY="514.0" prefHeight="45.0" prefWidth="423.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="Precio del Producto: " textFill="#f9fafc" />
+            <TextField style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="24.0" layoutY="451.0" prefHeight="45.0" prefWidth="423.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="Marca del producto: " textFill="#f9fafc" />
+            <TextField style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="24.0" layoutY="392.0" prefHeight="45.0" prefWidth="423.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="Imagen del producto: " textFill="#f9fafc" />
+            <TextField style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="23.0" layoutY="227.0" prefHeight="45.0" prefWidth="423.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="Descripción Publicación: " textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="23.0" layoutY="168.0" prefHeight="45.0" prefWidth="423.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="Nombre Publicación: " textFill="#f9fafc" />
+            <TextField style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="109.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="423.0" style="-fx-font-family: Impact; -fx-font-weight: bolder; -fx-font-size: 3.0em;" text="PUBLICACIÓN DE PRODUCTO" textFill="#f9fafc">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

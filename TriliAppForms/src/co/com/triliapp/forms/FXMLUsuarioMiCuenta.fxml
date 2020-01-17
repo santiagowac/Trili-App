@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="823.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.com.triliapp.forms.FXMLUsuarioMiCuentaController">
+   <children>
+      <ImageView fitHeight="832.0" fitWidth="618.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@recursos/fondo.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="-1.0" layoutY="-6.0" prefHeight="109.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="45.0" prefWidth="167.0" style="-fx-font-family: Impact; -fx-font-weight: bolder; -fx-font-size: 3.0em;" text="MI CUENTA" textFill="#f9fafc">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button layoutX="180.0" layoutY="780.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Regresar" onAction="#RegresarMenu" textFill="#f9fafc" />
+      <ImageView fitHeight="219.0" fitWidth="235.0" layoutX="124.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@recursos/usup1.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="340.0" prefHeight="45.0" prefWidth="219.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="Nombre: " textFill="#f9fafc" />
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="NombreU" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="240.0" layoutY="456.0" prefHeight="45.0" prefWidth="219.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="Estado: " textFill="#f9fafc" />
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="EstadoU" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="397.0" prefHeight="45.0" prefWidth="219.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="Experiencia: " textFill="#f9fafc" />
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="ExpU" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="240.0" layoutY="340.0" prefHeight="45.0" prefWidth="219.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="Correo: " textFill="#f9fafc" />
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="CorreoU" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="456.0" prefHeight="45.0" prefWidth="219.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="Rol: " textFill="#f9fafc" />
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="RolU" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="240.0" layoutY="397.0" prefHeight="45.0" prefWidth="219.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="Rango: " textFill="#f9fafc" />
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="RangoU" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <TableView layoutX="15.0" layoutY="611.0" prefHeight="131.0" prefWidth="444.0" style="-fx-font-family: Impact;">
+        <columns>
+          <TableColumn prefWidth="442.0" text="Nombre" />
+        </columns>
+      </TableView>
+      <Button layoutX="233.0" layoutY="513.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="MIS PUBLICACIONES" textFill="#f9fafc" />
+      <Button layoutX="60.0" layoutY="513.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="133.0" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="DESCARTAR" textFill="#f9fafc" />
+      <HBox alignment="CENTER" layoutX="53.0" layoutY="558.0" prefHeight="45.0" prefWidth="386.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="Nombre de la Publicacion: " textFill="#f9fafc" />
+            <TextField prefHeight="25.0" prefWidth="114.0" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <Label layoutX="16.0" layoutY="742.0" prefHeight="29.0" prefWidth="444.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 2px 0px 2px; -fx-font-family: Impact;" />
+   </children>
+</AnchorPane>

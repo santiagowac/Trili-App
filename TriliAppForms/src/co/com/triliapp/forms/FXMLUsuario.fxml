@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+
+<!--Paquete Para Colocar Textos-->
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.com.triliapp.forms.FXMLUsuarioController">
+   <children>
+      <ImageView fitHeight="848.0" fitWidth="469.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@recursos/fondo.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="119.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label alignment="CENTER" style="-fx-font-family: Impact; -fx-font-size: 3.0em;" text="REGISTRO" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="13.0" layoutY="250.0" prefHeight="45.0" prefWidth="441.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-size: 2.2em; -fx-font-family: Impact;" text="Nombre de Usuario (Alias): " textFill="#f9fafc" />
+            <TextField fx:id="txtDisplayName" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="12.0" layoutY="314.0" prefHeight="45.0" prefWidth="441.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-size: 2.2em; -fx-font-family: Impact;" text="Imagen Usuario: " textFill="#f9fafc" />
+            <TextField fx:id="txtImagenUsuario" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="12.0" layoutY="384.0" prefHeight="45.0" prefWidth="441.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-size: 2.2em; -fx-font-family: Impact;" text="Contraseña: " textFill="#f9fafc" />
+            <TextField fx:id="txtContraseniaUsuario" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="13.0" layoutY="447.0" prefHeight="45.0" prefWidth="441.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-size: 2.2em; -fx-font-family: Impact;" text="Correo Electronico: " textFill="#f9fafc" />
+            <TextField fx:id="txtCorreoUsuario" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <Button layoutX="86.0" layoutY="543.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: white; -fx-font-family: Impact; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Regresar" onAction="#regresarMenu" textFill="#f9fafc" />
+      <Button onAction="#RegistroUsuario" layoutX="285.0" layoutY="543.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: white; -fx-font-family: Impact; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Enviar" textFill="#f9fafc" />
+   </children>
+</AnchorPane>

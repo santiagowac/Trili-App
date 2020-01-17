@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.com.triliapp.forms.FXMLUsuarioAdminInicioController">
+   <children>
+      <ImageView fitHeight="832.0" fitWidth="618.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@recursos/fondo.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="109.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="45.0" prefWidth="150.0" style="-fx-font-family: Impact; -fx-font-weight: bolder; -fx-font-size: 3.0em;" text=" TRILI APP" textFill="#f9fafc">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: black; -fx-font-family: Impact; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 1.5em;" text="Publicar " onAction="#irAPublicar" textFill="#f9fafc" />
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: black; -fx-font-family: Impact; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 1.5em;" text="Mi Cuenta" onAction="#irAMiCuenta" textFill="#f9fafc" />
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="109.0" style="-fx-background-color: black; -fx-font-family: Impact; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 1.5em;" text="Administrar" onAction="#irAAdministrar" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="733.0" prefHeight="109.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label prefHeight="45.0" prefWidth="188.0" style="-fx-font-family: Impact; -fx-font-weight: bolder; -fx-font-size: 3.0em;" text="CATEGORIAS" textFill="#f9fafc">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ComboBox prefWidth="150.0" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <Label layoutX="248.0" layoutY="610.0" prefHeight="17.0" prefWidth="200.0" style="-fx-font-family: Impact; -fx-font-size: 1.5em;" text="Precio" textFill="#f9fafc" />
+      <Label layoutX="21.0" layoutY="387.0" prefHeight="17.0" prefWidth="200.0" style="-fx-font-family: Impact; -fx-font-size: 1.5em;" text="Precio" textFill="#f9fafc" />
+      <Label layoutX="248.0" layoutY="387.0" prefHeight="17.0" prefWidth="200.0" style="-fx-font-family: Impact; -fx-font-size: 1.5em;" text="Precio" textFill="#f9fafc" />
+      <Label layoutX="21.0" layoutY="610.0" prefHeight="17.0" prefWidth="200.0" style="-fx-font-family: Impact; -fx-font-size: 1.5em;" text="Precio" textFill="#f9fafc" />
+      <Hyperlink layoutX="242.0" layoutY="364.0" prefHeight="23.0" prefWidth="200.0" style="-fx-font-family: Impact; -fx-font-size: 1.5em;" text="Nombre Publicacion CM1" textFill="#f9fafc" />
+      <Hyperlink layoutX="21.0" layoutY="584.0" prefHeight="23.0" prefWidth="200.0" style="-fx-font-family: Impact; -fx-font-size: 1.5em;" text="Nombre Publicacion PS4" textFill="#f9fafc" />
+      <Hyperlink layoutX="21.0" layoutY="364.0" prefHeight="23.0" prefWidth="200.0" style="-fx-font-family: Impact; -fx-font-size: 1.5em;" text="Nombre Publicacion PC" onAction="#verPublicacionEnAdm" textFill="#f9fafc" />
+      <Hyperlink layoutX="248.0" layoutY="584.0" prefHeight="23.0" prefWidth="200.0" style="-fx-font-family: Impact; -fx-font-size: 1.5em;" text="Nombre Publicacion CM2" textFill="#f9fafc" />
+      <TextField layoutX="24.0" layoutY="138.0" prefHeight="39.0" prefWidth="345.0" style="-fx-font-family: Impact;" />
+      <Button layoutX="369.0" layoutY="138.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-font-family: Impact; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Buscar" textFill="#f9fafc" />
+      <Button layoutX="184.0" layoutY="678.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="117.0" style="-fx-background-color: black; -fx-font-family: Impact; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 1.5em;" text="Siguiente" textFill="#f9fafc" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="211.0" pickOnBounds="true">
+         <image>
+            <Image url="@recursos/productoprueba1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="248.0" layoutY="434.0" pickOnBounds="true">
+         <image>
+            <Image url="@recursos/productoprueba4.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="248.0" layoutY="211.0" pickOnBounds="true">
+         <image>
+            <Image url="@recursos/productoprueba2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="434.0" pickOnBounds="true">
+         <image>
+            <Image url="@recursos/productoprueba3.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

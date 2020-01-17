@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+<GridPane  styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="triliappforms.FXMLJoinController" alignment="center" hgap="10" vgap="10">
+    <!-- <children>-->
+    <!-- <URL value="@fxmljoin.css"/>--> <!--Css-->
+    <HBox spacing="5" alignment="bottom_center" GridPane.columnIndex="0" GridPane.rowIndex="0"
+          GridPane.columnSpan="2">
+        <Text text="LOGIN" fx:id="textLogin"
+        />
+    </HBox>
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <Button text="Iniciar Seción Con Google" fx:id="buttonIngresarConGoogle" >
+            
+        </Button>
+    </HBox>
+        
+    <!--Label y cajas de texto===========================================-->
+    <HBox spacing="5" alignment="bottom_center" GridPane.columnIndex="0" GridPane.rowIndex="3"
+          GridPane.columnSpan="2" >
+        <Label text="O" >
+        
+        </Label>
+    </HBox>
+    
+    <HBox spacing="5" alignment="bottom_center" GridPane.columnIndex="0" GridPane.rowIndex="8"
+          GridPane.columnSpan="2" >
+        <Label text= "¿Olvido Su Usuario?">
+              
+        </Label>
+    </HBox>
+    
+    <HBox spacing="5" alignment="bottom_center" GridPane.columnIndex="0" GridPane.rowIndex="9"
+          GridPane.columnSpan="2" >
+        <Label text= "¿Olvido Su Contraseña">
+              
+        </Label>
+    </HBox>
+    
+        
+    <TextField  text="NickName" fx:id="txtLoginNickName" GridPane.columnIndex="0" GridPane.rowIndex="4" >
+    </TextField>   
+        
+    <TextField text="Contraseña" fx:id="txtContraseña" GridPane.columnIndex="0" GridPane.rowIndex="5" >
+    </TextField>              
+        
+    <!--=======Botones===================================================-->
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2">
+        <Button text="Iniciar Sesión" fx:id="buttonIngresarSesion"
+        onAction="#handleSubmitExitoso">
+            <!-- <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font> -->
+        </Button>
+    </HBox>
+    
+    <HBox spacing="5" alignment="bottom_center" 
+              GridPane.columnIndex="0" GridPane.rowIndex="10" GridPane.columnSpan="2">
+        <Button text="Registrarse" fx:id="buttonRegistrarUsuario" 
+        onAction="#handleSubmitRegistrarse">
+            <!-- <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font> -->
+        </Button>
+    </HBox>
+    <Text fx:id="actiontarget" 
+      GridPane.columnIndex="0" GridPane.rowIndex="11" />
+        
+    <stylesheets>
+        <URL value="@fxmFormularios.css"/>
+    </stylesheets>
+
+    <!-- </children>-->
+</GridPane>

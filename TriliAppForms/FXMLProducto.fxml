@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?> <!--Paquete Para Colocar Textos-->
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="triliappforms.FXMLProductoController" alignment="center" hgap="10" vgap="10">
+    
+    <!--<URL value="@fxmlproducto.css"/>--> <!--Colocar El estilo CSS-->
+       
+    <Text text="Producto" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" fx:id="textoproducto">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15"/>
+        </font>
+    </Text>
+        
+        
+    <Label text="IdProducto" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15"/>
+        </font>
+    </Label>
+    <TextField fx:id="txtIdProducto" GridPane.columnIndex="2" GridPane.rowIndex="3">
+    </TextField>
+        
+    <Label text="Nombre Producto" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15"/>
+        </font>
+    </Label>
+    <TextField fx:id="txtNombreProducto" GridPane.columnIndex="2" GridPane.rowIndex="4">
+    </TextField>
+        
+    <Label text="IdUsuario" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15"/>
+        </font>
+    </Label>
+    <TextField fx:id="txtfkUsuarioProducto" GridPane.columnIndex="2" GridPane.rowIndex="5">
+    </TextField>
+        
+    <Label text="idCategoria" GridPane.columnIndex="1" GridPane.rowIndex="6">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15"/>
+        </font>
+    </Label>
+    <TextField fx:id="txtfkCategoriaProducto" GridPane.columnIndex="2" GridPane.rowIndex="6">
+    </TextField>
+        
+    <!--============================Botones==============================-->
+        
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="3">
+        <Button text="Insertar" fx:id="buttonInsertarProducto" onAction="#AgregarUsuario" >
+            <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font>
+        </Button>
+    </HBox>
+
+        
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="4">
+        <Button text="Mostrar" fx:id="buttonMostrarProducto" onAction="#MostrarUsuario">
+            <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font>
+        </Button>
+    </HBox>
+
+        
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="5">
+        <Button text="Actualizar" fx:id="buttonActualizarProducto" onAction="#ActualizacionUsuario" >
+            <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font>
+        </Button>
+    </HBox>
+
+        
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="6">
+        <Button text="Eliminar" fx:id="buttonEliminarProducto" onAction="#EliminarUsuario" alignment="center">
+            <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font>
+        </Button>
+    </HBox>
+    
+    <!--Acciones-->
+    <HBox GridPane.columnIndex="2" GridPane.rowIndex="7" alignment="center">
+        <Text fx:id="actiontarget" >
+        </Text>
+    </HBox>
+    
+    <!--Estilo CSS-->
+    <stylesheets>
+        <URL value="@fxmFormularios.css"/>
+    </stylesheets>
+</GridPane>

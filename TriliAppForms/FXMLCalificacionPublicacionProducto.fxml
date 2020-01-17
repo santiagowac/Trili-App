@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?> 
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="triliappforms.FXMLCalificacionPublicacionProductoController" alignment="center" hgap="10" vgap="10">
+    <!--Textos-->
+    <HBox alignment="bottom_center" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" > 
+        <Text text="Calificacion Publicacion Producto" fx:id="textoCalificacionProducto">
+        </Text>
+    </HBox>
+    
+    <Label text="Id Calificación Producto" GridPane.columnIndex="0" GridPane.rowIndex="2">
+    </Label>
+    <TextField fx:id="txtIdPublicacionProducto" GridPane.columnIndex="1" GridPane.rowIndex="2">
+    </TextField>
+    
+    <Label text="Valor Publicacion" GridPane.columnIndex="0" GridPane.rowIndex="3">
+    </Label>
+    <TextField fx:id="txtCalificacionPublicacionProducto" GridPane.columnIndex="1" GridPane.rowIndex="3">
+    </TextField>
+    
+    <Label text="Comentario Publicacion" GridPane.columnIndex="0" GridPane.rowIndex="4">
+    </Label>
+    <TextField fx:id="txtComentarioPublicacionProducto" GridPane.columnIndex="1" GridPane.rowIndex="4">
+    </TextField>
+    
+    <Label text="Id Usuario" GridPane.columnIndex="0" GridPane.rowIndex="5">
+    </Label>
+    <TextField fx:id="txtFkIdUsuarioCalificacionProducto" GridPane.columnIndex="1" GridPane.rowIndex="5">
+    </TextField>
+    
+    <Label text="Id Publicacion De Producto" GridPane.columnIndex="0" GridPane.rowIndex="6">
+    </Label>
+    <TextField fx:id="txtFkIdPublicacionPorductoCalificacionProducto" GridPane.columnIndex="1" GridPane.rowIndex="6">
+    </TextField>
+
+    <!--Botones-->
+    
+    <HBox spacing="5" alignment= "bottom_center"
+         GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button text="Insertar" fx:id="buttonInsertarCalificaionPublicacionProducto"
+            onAction="#handleSubmitButtonActionCPI">
+                <font>
+                    <Font name="Franklin Gothic Medium" size="14" />
+                </font> 
+            </Button>
+         </HBox>
+         
+         <HBox spacing="5" alignment="bottom_center"
+         GridPane.columnIndex="3" GridPane.rowIndex="4">
+             <Button text="Mostrar" fx:id="buttomMostrarCalificaionPublicacionProducto"
+             onAction="#handleMostrartButtonActionCPM">
+                 <font>
+                     <Font name="Franklin Gothic Medium" size="14" />
+                 </font>
+             </Button>
+         </HBox>
+         
+         <HBox spacing="5" alignment="bottom_center"
+         GridPane.columnIndex="3" GridPane.rowIndex="5">
+         <Button text="Actualizar" fx:id="buttomActualizarCalificaionPublicacionProducto"
+         onAction="#handleActualizarButtonActionCPA">
+           <font>
+                    <Font name="Franklin Gothic Medium" size="14" />
+                </font>
+            </Button>
+         </HBox>
+        
+        <HBox spacing="5" alignment="bottom_center"
+         GridPane.columnIndex="3" GridPane.rowIndex="6">
+         <Button text="Eliminar" fx:id="buttomEliminarCalificaionPublicacionProducto"
+         onAction="#handleEliminarButtonActionCPE">
+           <font>
+                    <Font name="Franklin Gothic Medium" size="14" />
+                </font>
+            </Button>
+         </HBox>
+        
+          
+         <Text fx:id="actiontarget" 
+      GridPane.columnIndex="1" GridPane.rowIndex="9" />
+    <!--Estilo CSS-->
+    <stylesheets>
+        <URL value="@fxmFormularios.css"/>
+    </stylesheets>
+</GridPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.com.triliapp.forms.FXMLRolController">
+   <children>
+      <ImageView fitHeight="848.0" fitWidth="469.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@recursos/fondo.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="119.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label alignment="CENTER" style="-fx-font-family: Impact; -fx-font-size: 3.0em;" text="GESTIÓN DE ROLES" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <Button onAction="#IngresarRol"  layoutX="15.0" layoutY="152.0" mnemonicParsing="false" style="-fx-font-size: 2.0em; -fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Insertar" textFill="#f9fafc" />
+      <Button layoutX="123.0" layoutY="152.0" mnemonicParsing="false" style="-fx-font-size: 2.0em; -fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Buscar" textFill="#f9fafc" />
+      <Button onAction="#EliminarRol" layoutX="222.0" layoutY="152.0" mnemonicParsing="false" style="-fx-font-size: 2.0em; -fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Eliminar" textFill="#f9fafc" />
+      <Button onAction="#ActualizarRol" layoutX="333.0" layoutY="152.0" mnemonicParsing="false" style="-fx-font-size: 2.0em; -fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Actualizar" textFill="#f9fafc" />
+      <Button onAction="#RegresarRol"  layoutX="180.0" layoutY="768.0" mnemonicParsing="false" style="-fx-font-size: 2.0em; -fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Regresar" textFill="#f9fafc" />
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="237.0" prefHeight="45.0" prefWidth="439.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-size: 2.2em; -fx-font-family: Impact;" text="Id Rol:" textFill="#f9fafc" />
+            <TextField fx:id="txtIdRol" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="307.0" prefHeight="45.0" prefWidth="439.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-size: 2.2em; -fx-font-family: Impact;" text="Nombre Rol: " textFill="#f9fafc" />
+            <TextField fx:id="txtNombreRol" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <TableView layoutX="15.0" layoutY="366.0" prefHeight="274.0" prefWidth="439.0" style="-fx-font-family: Impact;">
+        <columns>
+          <TableColumn prefWidth="217.0" text="Id" />
+          <TableColumn prefWidth="221.0" text="Nombre" />
+        </columns>
+      </TableView>
+      <Label layoutX="21.0" layoutY="684.0" prefHeight="45.0" prefWidth="427.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 2px 0px 2px; -fx-font-family: Impact;" />
+   </children>
+</AnchorPane>

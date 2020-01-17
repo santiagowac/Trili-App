@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.com.triliapp.forms.FXMLJoinController">
+   <children>
+      <ImageView fitHeight="832.0" fitWidth="618.0" pickOnBounds="true" preserveRatio="true" style="-fx-font-family: Impact;">
+         <image>
+            <Image url="@recursos/fondo.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="109.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="249.0" style="-fx-font-family: Impact; -fx-font-weight: bolder; -fx-font-size: 3.0em;" text="LOGIN TRILI APP" textFill="#f9fafc">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="434.0" prefHeight="45.0" prefWidth="437.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Nombre (Alias): " textFill="#f9fafc" />
+            <TextField fx:id="txtLoginNickName" style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="513.0" prefHeight="45.0" prefWidth="437.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Contraseña: " textFill="#f9fafc" />
+            <PasswordField fx:id="PSSWContrasenia"/>
+         </children>
+      </HBox>
+      <ImageView fitHeight="247.0" fitWidth="155.0" layoutX="159.0" layoutY="142.0" opacity="0.67" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@recursos/img1.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="71.0" layoutY="596.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Ingresar" textFill="#f9fafc" onAction="#Logearse" />
+      <Button layoutX="281.0" layoutY="596.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Registrarse" onAction="#registrarse" textFill="#f9fafc" />
+      <Hyperlink layoutX="78.0" layoutY="650.0" style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="¿Olvido su Nombre de Usuario?" onAction="#irARecuperarU" textFill="#f9fafc" />
+      <Hyperlink layoutX="114.0" layoutY="694.0" style="-fx-font-family: Impact; -fx-font-size: 2.0em;" text="¿Olvido su Contraseña?" onAction="#irARecuperarC" textFill="#f9fafc" />
+      <Button layoutX="182.0" layoutY="758.0" mnemonicParsing="false" style="-fx-font-family: Impact; -fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-size: 2.0em;" text="Regresar" onAction="#regresarMenu" textFill="#f9fafc" />
+   </children>
+</AnchorPane>

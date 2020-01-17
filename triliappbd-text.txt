@@ -1,0 +1,122 @@
+===Base de datos triliapp
+
+== Estructura de tabla para la tabla calificacionespublicacionesproductos
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**idCalificacionPublicacionProducto**//|int(11)|No|
+|valorCPP|float|Sí|NULL
+|comentarioCPP|char(100)|No|
+|fechaCPP|timestamp|No|CURRENT_TIMESTAMP
+|idUsuario|int(11)|No|
+|idPublicacionDeProducto|int(11)|No|
+== Volcado de datos para la tabla calificacionespublicacionesproductos
+
+== Estructura de tabla para la tabla categorias
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**idCategoria**//|int(11)|No|
+|nombreCAT|char(25)|No|
+== Volcado de datos para la tabla categorias
+
+== Estructura de tabla para la tabla productos
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**idProducto**//|int(11)|No|
+|nombrePR|char(25)|No|
+|idUsuario|int(11)|No|
+|idCategoria|int(11)|No|
+== Volcado de datos para la tabla productos
+
+== Estructura de tabla para la tabla publicacionesdeproductos
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**idPublicacionDeProducto**//|int(11)|No|
+|nombrePDP|char(25)|No|
+|fechaPDP|timestamp|No|CURRENT_TIMESTAMP
+|descripcionProducto|char(100)|Sí|NULL
+|imagenProducto|char(50)|No|
+|marcaProducto|char(25)|No|
+|precioProducto|float|No|
+|ubicacionProducto|char(50)|No|
+|idUsuario|int(11)|No|
+|idProducto|int(11)|No|
+== Volcado de datos para la tabla publicacionesdeproductos
+
+== Estructura de tabla para la tabla rangos
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**idRango**//|int(11)|No|
+|nombreRNG|char(25)|No|
+|imagenRNG|char(40)|No|
+|descripcionRNG|char(100)|No|
+== Volcado de datos para la tabla rangos
+
+|1|Bronze|imagenRB|Primer Rango
+|2|Plata|imagenRP|Segundo Rango
+|3|Oro|imagenRO|Tercer Rango
+|4|Diamante|imagenRD|Cuarto Rango
+== Estructura de tabla para la tabla reportes
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**idReporte**//|int(11)|No|
+|descripcionRPTE|char(100)|No|
+|fechaRPTE|timestamp|No|CURRENT_TIMESTAMP
+|idUsuario|int(11)|No|
+|idPublicacionDeProducto|int(11)|No|
+== Volcado de datos para la tabla reportes
+
+== Estructura de tabla para la tabla roles
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**idRol**//|int(11)|No|
+|nombreRL|char(25)|No|
+== Volcado de datos para la tabla roles
+
+|1|Invitado
+|2|Administrador
+== Estructura de tabla para la tabla sugerencias
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**idSugerencia**//|int(11)|No|
+|tipoSUG|char(25)|No|
+|fechaSUG|timestamp|No|CURRENT_TIMESTAMP
+|descripcionSUG|char(100)|No|
+|idUsuario|int(11)|No|
+== Volcado de datos para la tabla sugerencias
+
+== Estructura de tabla para la tabla usuarios
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**idUsuario**//|int(11)|No|
+|imagenUsu|char(50)|Sí|NULL
+|**DisplayName**|char(25)|No|
+|contraseniaUsu|char(25)|No|
+|correoUsu|char(50)|No|
+|experienciaUsu|int(11)|No|0
+|idRango|int(11)|No|
+|idRol|int(11)|No|
+|estadoUsuario|char(20)|Sí|Activo
+== Volcado de datos para la tabla usuarios
+
+|1|imagen|kmargo|kmargo|kmargo@kmargo|0|1|1|Activo
+|2|imagrn2|lalos|lalos|lalos@lalos|0|1|1|Activo
+|3|sadas|asdas|sadasd|asdasd|0|1|1|Activo
+|4|asdasd|a|1|asdasd|0|1|1|Activo

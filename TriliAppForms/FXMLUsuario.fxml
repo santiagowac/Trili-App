@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?> <!--Paquete Para Colocar Textos-->
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+<GridPane fx:controller="triliappforms.FXMLUsuarioController" xmlns:fx="http://javafx.com/fxml/1"  alignment="center" hgap="10" vgap="10">
+    
+    <Text text="Usuario" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" fx:id="textousuario">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15"/>
+        </font>            
+    </Text>
+        
+    <Label text="IdUsuario" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15"/>
+        </font>
+    </Label>
+    <TextField fx:id="txtIdUsuario" GridPane.columnIndex="2" GridPane.rowIndex="2">
+    </TextField>
+        
+      
+        
+    <Label text="DisplayName" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15"/>
+        </font>
+    </Label>
+    <TextField fx:id="txtDisplayName" GridPane.columnIndex="2" GridPane.rowIndex="4">
+    </TextField>
+        
+    <Label text="Contraseña Usuario" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15"/>
+        </font>
+    </Label>
+    <TextField fx:id="txtContraseniaUsuario" GridPane.columnIndex="2" GridPane.rowIndex="5">
+    </TextField>
+        
+    <Label text="Correo Usuario" GridPane.columnIndex="1" GridPane.rowIndex="6">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15"/>
+        </font>
+    </Label>
+    <TextField fx:id="txtCorreoUsuario" GridPane.columnIndex="2" GridPane.rowIndex="6">       
+    </TextField>
+        
+    <Label text="Experiencia Usuario" GridPane.columnIndex="1" GridPane.rowIndex="7">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15"/>
+        </font>
+    </Label>
+    <TextField fx:id="txtExperienciaUsuario" GridPane.columnIndex="2" GridPane.rowIndex="7">
+    </TextField>
+        
+    <Label text="Rango Usuario" GridPane.columnIndex="1" GridPane.rowIndex="8">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15"/>
+        </font>
+    </Label>
+    <TextField fx:id="txtfkRangoUsuario" GridPane.columnIndex="2" GridPane.rowIndex="8">
+    </TextField>
+        
+    <Label text="Rol Usuario" GridPane.columnIndex ="1" GridPane.rowIndex="9">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15"/>
+        </font>
+    </Label>
+    <TextField fx:id="txtfkRolUsuario" GridPane.columnIndex="2" GridPane.rowIndex="9">
+    </TextField>
+        
+    <!--//////////////////////////Botones////////////////////////////////-->
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="4">
+        <Button text="Insertar" fx:id="buttonInsertarUsuario"
+                onAction="#handleSubmitButtonActionUsuarioI">
+            <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font>
+        </Button>
+    </HBox>
+        
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="5">
+        <Button text="Mostrar" fx:id="buttonMostrarUsuario" 
+                onAction="#handleMostrartButtonActionUsuarioM">
+            <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font>
+        </Button>
+    </HBox>
+        
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="6">
+        <Button text="Actualizar" fx:id="buttonActualizarUsuario" 
+                onAction="#handleActualizarButtonActionUsuarioA">
+            <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font>
+        </Button>
+    </HBox>
+        
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="7">
+        <Button text="Eliminar" fx:id="buttonEliminarUsuario" 
+                onAction="#handleEliminarButtonActionUsuarioE">
+            <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font>
+        </Button>
+    </HBox>
+    
+    <Text fx:id="actiontarget" 
+      GridPane.columnIndex="3" GridPane.rowIndex="9" />
+    
+    <stylesheets>
+        <URL value="@fxmFormularios.css"/>
+    </stylesheets>
+    
+</GridPane>

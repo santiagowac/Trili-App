@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+
+<GridPane  styleClass="@fxmlcategoria.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.com.triliapp.forms.FXMLCategoriaController" alignment="center" hgap="10" vgap="10">
+    <!-- <children>-->
+    <!-- <URL value="@fxmlcategoria.css"/>--> <!--Css-->
+
+    <Text text="Categoria" fx:id="textcategoria"
+          GridPane.columnIndex="0" GridPane.rowIndex="0"
+          GridPane.columnSpan="2"/>
+        
+    <!--Label y cajas de texto===========================================-->
+    
+    <HBox GridPane.columnIndex="4" GridPane.rowIndex="1" alignment="CENTER_LEFT" layoutX="10.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns" >
+        <children>
+            <FontAwesomeIcon glyphStyle="-fx-fill:#7C8184" iconName="DASHBOARD" size="1.3em"/>
+            <Button  fx:id="buttonRegresar" onAction="#RegresarCategoria">
+                <Label text="Dashboard" textFill="#7c8184" >
+                    <font>
+                        <Font name="Calibri Light" size="15.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Label>
+            </Button>
+        </children> 
+        <padding>
+            <Insets left="10.0" />
+        </padding>
+        <VBox.margin>
+            <Insets top="10.0" />
+        </VBox.margin>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </HBox>
+    
+    <!--    <HBox GridPane.columnIndex="4" GridPane.rowIndex="1" alignment="CENTER_LEFT" layoutX="10.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="btns">
+        <FontAwesomeIcon glyphStyle="-fx-fill:#7C8184" iconName="DASHBOARD" size="1.3em" />
+        <Label text="Dashboard" textFill="#7c8184">
+            <font>
+                <Font name="Calibri Light" size="15.0" />
+            </font>
+        </Label>
+    </HBox>-->
+    
+    
+    <!--<FontAwesomeIcon glyphStyle="-fx-fill:#7C8184" iconName="UPLOAD" size="1.3em" />  Colocar Imagenes-->
+    
+    <Label text="IdCategoria" GridPane.columnIndex="0" GridPane.rowIndex="3">
+    </Label>
+    <TextField fx:id="txtIdCategoria" GridPane.columnIndex="1" GridPane.rowIndex="3" style="-fx-background-color: transparent; -fx-text-fill #fff; " >
+    </TextField>   
+        
+    <Label text="Nombre Categoria" GridPane.columnIndex="0" GridPane.rowIndex="4" >
+    </Label>
+    <TextField fx:id="txtNombreCategoria" GridPane.columnIndex="1" GridPane.rowIndex="4">
+    </TextField>   
+    
+    <!--Colocar Imagenes-->   
+    
+    <!--    <ImageView GridPane.columnIndex="0" GridPane.rowIndex="5"  fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@Recursos/gohan_ss2.jpg" />
+        </image>
+    </ImageView>       -->
+    <GridPane>
+        
+    </GridPane>
+        
+    <!--=======Botones===================================================-->
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="3">
+        <JFXButton text="Insertar" fx:id="buttonInsertarCategoria" onAction="#MostrarCategoria"  ripplerFill="Red" style="-fx-background-radius: 20px;">
+
+        </JFXButton>
+    </HBox>
+        
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="4">
+        <Button text="Mostrar" fx:id="buttonMostrarCategoria" onAction="#MostrarCategoria"  >
+            <!-- <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font> -->
+        </Button>
+    </HBox>
+        
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="5">
+        <Button text="Actualizar" fx:id="buttonActualizarCategoria" onAction="#ActualizacionCategoria">
+            <!-- <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font> -->
+        </Button>
+    </HBox>
+        
+    <HBox spacing="5" alignment="bottom_center" 
+          GridPane.columnIndex="3" GridPane.rowIndex="6">
+        <Button text="Eliminar" fx:id="buttonEliminarCategoria" onAction="#EliminarCategoria" >
+            <!-- <font>
+                <Font name="Franklin Gothic Medium" size="14" />
+            </font> -->
+        </Button>
+    </HBox>
+    
+    <HBox spacing="5" alignment="bottom_center" GridPane.columnIndex="3" GridPane.rowIndex="7">
+        <Button text="Regresar" fx:id="buttonRegresar" onAction="#RegresarCategoria">
+        </Button>
+    </HBox>
+    
+    <!--Acciones-->
+    
+    <HBox GridPane.columnIndex="1" GridPane.rowIndex="5" alignment="center">
+        <Text fx:id="actiontarget" >
+        </Text>
+    </HBox>
+        
+    <stylesheets>
+        <URL value="@fxmFormularios.css"/>
+    </stylesheets>
+
+    <!-- </children>-->
+</GridPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="466.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="co.com.triliapp.forms.FXMLSugerenciaAdminController">
+   <children>
+      <ImageView fitHeight="848.0" fitWidth="469.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@recursos/fondo.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="119.0" prefWidth="469.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label alignment="CENTER" style="-fx-font-family: Impact; -fx-font-size: 3.0em;" text="GESTIÓN DE SUGERENCIAS" textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <Button layoutX="64.0" layoutY="149.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact; -fx-font-size: 2.0em;" text="Buscar" textFill="#f9fafc" />
+      <Button layoutX="187.0" layoutY="149.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact; -fx-font-size: 2.0em;" text="Eliminar" textFill="#f9fafc" />
+      <Button layoutX="325.0" layoutY="149.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact; -fx-font-size: 2.0em;" text="Actualizar" textFill="#f9fafc" />
+      <Button layoutX="180.0" layoutY="779.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-font-family: Impact; -fx-font-size: 2.0em;" text="Regresar" onAction="#RegresarSug"  textFill="#f9fafc" />
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="195.0" prefHeight="45.0" prefWidth="439.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Id Sugerencia: " textFill="#f9fafc" />
+            <TextField style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="16.0" layoutY="255.0" prefHeight="45.0" prefWidth="439.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Tipo Sugerencia: " textFill="#f9fafc" />
+            <TextField style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="314.0" prefHeight="45.0" prefWidth="439.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Descripción Sugerencia: " textFill="#f9fafc" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="16.0" layoutY="430.0" prefHeight="45.0" prefWidth="439.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <Label style="-fx-font-family: Impact; -fx-font-size: 2.2em;" text="Id Usuario: " textFill="#f9fafc" />
+            <TextField style="-fx-font-family: Impact;" />
+         </children>
+      </HBox>
+      <TextField layoutX="16.0" layoutY="369.0" prefHeight="45.0" prefWidth="439.0" style="-fx-font-family: Impact;" />
+      <TableView layoutX="16.0" layoutY="483.0" prefHeight="233.0" prefWidth="439.0" style="-fx-font-family: Impact;">
+        <columns>
+          <TableColumn prefWidth="53.0" text="Id" />
+          <TableColumn prefWidth="111.0" text="Tipo" />
+            <TableColumn prefWidth="99.0" text="Fecha" />
+            <TableColumn prefWidth="114.0" text="Descripcion" />
+            <TableColumn prefWidth="60.0" text="Usuario" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="728.0" prefHeight="45.0" prefWidth="439.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 2px 0px 2px; -fx-font-family: Impact;" />
+   </children>
+</AnchorPane>
